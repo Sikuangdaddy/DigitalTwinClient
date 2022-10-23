@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1149</width>
-    <height>608</height>
+    <width>1328</width>
+    <height>703</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,8 +17,8 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>440</x>
-      <y>60</y>
+      <x>510</x>
+      <y>10</y>
       <width>81</width>
       <height>21</height>
      </rect>
@@ -30,8 +30,8 @@
    <widget class="QPushButton" name="showButton">
     <property name="geometry">
      <rect>
-      <x>290</x>
-      <y>520</y>
+      <x>440</x>
+      <y>560</y>
       <width>111</width>
       <height>29</height>
      </rect>
@@ -43,8 +43,8 @@
    <widget class="QPushButton" name="uploadButton">
     <property name="geometry">
      <rect>
-      <x>510</x>
-      <y>520</y>
+      <x>600</x>
+      <y>560</y>
       <width>93</width>
       <height>29</height>
      </rect>
@@ -56,8 +56,8 @@
    <widget class="QPushButton" name="inlet_pipe">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>440</y>
+      <x>310</x>
+      <y>490</y>
       <width>93</width>
       <height>29</height>
      </rect>
@@ -69,10 +69,10 @@
    <widget class="QListWidget" name="listWidget">
     <property name="geometry">
      <rect>
-      <x>860</x>
-      <y>120</y>
+      <x>1080</x>
+      <y>80</y>
       <width>231</width>
-      <height>431</height>
+      <height>471</height>
      </rect>
     </property>
    </widget>
@@ -80,9 +80,9 @@
     <property name="geometry">
      <rect>
       <x>50</x>
-      <y>110</y>
-      <width>771</width>
-      <height>321</height>
+      <y>50</y>
+      <width>1021</width>
+      <height>431</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -95,8 +95,8 @@
    <widget class="ToolTipWidget" name="temp1" native="true">
     <property name="geometry">
      <rect>
-      <x>370</x>
-      <y>170</y>
+      <x>440</x>
+      <y>130</y>
       <width>16</width>
       <height>16</height>
      </rect>
@@ -105,50 +105,270 @@
    <widget class="ToolTipWidget" name="temp2" native="true">
     <property name="geometry">
      <rect>
-      <x>440</x>
-      <y>170</y>
+      <x>540</x>
+      <y>130</y>
       <width>16</width>
       <height>16</height>
      </rect>
     </property>
    </widget>
-   <widget class="ToolTipWidget" name="temp2_2" native="true">
+   <widget class="ToolTipWidget" name="temp3" native="true">
     <property name="geometry">
      <rect>
-      <x>670</x>
-      <y>120</y>
+      <x>660</x>
+      <y>130</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="ToolTipWidget" name="temp4" native="true">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>160</y>
       <width>20</width>
       <height>20</height>
      </rect>
     </property>
    </widget>
-   <widget class="ToolTipWidget" name="temp2_3" native="true">
+   <widget class="ToolTipWidget" name="temp5" native="true">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>10</y>
+      <x>810</x>
+      <y>350</y>
       <width>16</width>
       <height>16</height>
      </rect>
     </property>
    </widget>
-   <widget class="ToolTipWidget" name="temp2_4" native="true">
+   <widget class="ToolTipWidget" name="temp6" native="true">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>20</y>
+      <x>660</x>
+      <y>400</y>
       <width>16</width>
       <height>16</height>
      </rect>
     </property>
    </widget>
+   <widget class="ToolTipWidget" name="temp7" native="true">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>230</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="ToolTipWidget" name="temp8" native="true">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>250</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="ToolTipWidget" name="temp9" native="true">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>270</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="ToolTipWidget" name="temp10" native="true">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>290</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="ToolTipWidget" name="stapre1" native="true">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>130</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="ToolTipWidget" name="stapre2" native="true">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>130</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="ToolTipWidget" name="stapre3" native="true">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>130</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="ToolTipWidget" name="stapre4" native="true">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>130</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="ToolTipWidget" name="stapre5" native="true">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>130</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="ToolTipWidget" name="stapre6" native="true">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>180</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="ToolTipWidget" name="stapre7" native="true">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>330</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="ToolTipWidget" name="stapre8" native="true">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>400</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="ToolTipWidget" name="stapre9" native="true">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>230</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="ToolTipWidget" name="stapre10" native="true">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>250</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="ToolTipWidget" name="stapre11" native="true">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>270</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="ToolTipWidget" name="stapre12" native="true">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>290</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="ToolTipWidget" name="dynapre1" native="true">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>200</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="ToolTipWidget" name="dynapre2" native="true">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>310</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <zorder>label_show</zorder>
+   <zorder>showButton</zorder>
+   <zorder>uploadButton</zorder>
+   <zorder>inlet_pipe</zorder>
+   <zorder>listWidget</zorder>
+   <zorder>temp1</zorder>
+   <zorder>temp2</zorder>
+   <zorder>label</zorder>
+   <zorder>temp3</zorder>
+   <zorder>temp4</zorder>
+   <zorder>temp5</zorder>
+   <zorder>temp6</zorder>
+   <zorder>temp7</zorder>
+   <zorder>temp8</zorder>
+   <zorder>temp9</zorder>
+   <zorder>temp10</zorder>
+   <zorder>stapre1</zorder>
+   <zorder>stapre2</zorder>
+   <zorder>stapre3</zorder>
+   <zorder>stapre4</zorder>
+   <zorder>stapre5</zorder>
+   <zorder>stapre6</zorder>
+   <zorder>stapre7</zorder>
+   <zorder>stapre8</zorder>
+   <zorder>stapre9</zorder>
+   <zorder>stapre10</zorder>
+   <zorder>stapre11</zorder>
+   <zorder>stapre12</zorder>
+   <zorder>dynapre1</zorder>
+   <zorder>dynapre2</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1149</width>
+     <width>1328</width>
      <height>26</height>
     </rect>
    </property>

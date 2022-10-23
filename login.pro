@@ -15,6 +15,7 @@ SOURCES += \
     main.cpp \
     mainwindow.cpp \
     networkproxy.cpp \
+    showwindow.cpp \
     tooltipwidget.cpp
 
 HEADERS += \
@@ -23,11 +24,13 @@ HEADERS += \
     logindialog.h \
     mainwindow.h \
     networkproxy.h \
+    showwindow.h \
     tooltipwidget.h
 
 FORMS += \
     logindialog.ui \
-    mainwindow.ui
+    mainwindow.ui \
+    showwindow.ui
 
 CONFIG += lrelease
 CONFIG += embed_translations

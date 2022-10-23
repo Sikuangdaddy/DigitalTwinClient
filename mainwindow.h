@@ -6,6 +6,7 @@
 #include "networkproxy.h"
 #include "inletpipe.h"
 #include "tooltipwidget.h"
+#include "showwindow.h"
 #include <QMainWindow>
 
 QT_BEGIN_NAMESPACE
@@ -27,14 +28,18 @@ public:
 private slots:
     void on_inlet_pipe_clicked();
     void on_showButton_clicked();
-
     void on_uploadButton_clicked();
 
 private:
+    ShowWindow *showWindow;
     Ui::MainWindow *ui;
     NetworkProxy *proxy;
     QString device;
     Data *data;
     ToolTipWidget *test;
+    void initToolTipWidget();
+
+signals:
+    void updateData(QJsonObject *json);
 };
 #endif // MAINWINDOW_H

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ShowWindow</class>
+ <widget class="QWidget" name="ShowWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1462</width>
+    <height>610</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>-10</x>
+     <y>0</y>
+     <width>1461</width>
+     <height>611</height>
+    </rect>
+   </property>
+   <property name="whatsThis">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/new/prefix1/rawppt.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image:
+
+url(:/new/prefix1/rawppt.png)</string>
+   </property>
+   <widget class="QLabel" name="PSlabel1">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>40</y>
+      <width>69</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PS:5.5Bar</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="PSlabel2">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>40</y>
+      <width>69</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PS:5.0Bar</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="PSlabel3">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>40</y>
+      <width>69</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PS:5.0Bar</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Tlabel">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>40</y>
+      <width>69</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>T:85℃</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="arraylabl1">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>10</y>
+      <width>71</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>T:90℃
+PS:5.0Bar</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="arraylabl2">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>10</y>
+      <width>71</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>T:90℃
+PS:5.0Bar</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="arraylabl3">
+    <property name="geometry">
+     <rect>
+      <x>1120</x>
+      <y>180</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="text">
+     <string>T:85℃ PS:4.8Bar
+T:90℃ PS:5.0Bar</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="arraylabl4">
+    <property name="geometry">
+     <rect>
+      <x>1120</x>
+      <y>390</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="text">
+     <string>T:90℃ PS:5Bar
+T:80℃ PS:4.2Bar</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="arraylabl5">
+    <property name="geometry">
+     <rect>
+      <x>980</x>
+      <y>390</y>
+      <width>71</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>T:90℃
+PS:3Bar
+PD:3.4Bar</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="arraylabl6">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>400</y>
+      <width>71</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>T:90℃
+PS:3.0Bar</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="arraylabl7">
+    <property name="geometry">
+     <rect>
+      <x>1150</x>
+      <y>110</y>
+      <width>71</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>T:90℃
+PS:5.0Bar
+PD:5.2Bar</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="PDlabel">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>350</y>
+      <width>71</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PD:6.0Bar</string>
+    </property>
+   </widget>
+   <zorder>PSlabel1</zorder>
+   <zorder>PSlabel2</zorder>
+   <zorder>PSlabel3</zorder>
+   <zorder>Tlabel</zorder>
+   <zorder>arraylabl1</zorder>
+   <zorder>arraylabl2</zorder>
+   <zorder>arraylabl4</zorder>
+   <zorder>arraylabl5</zorder>
+   <zorder>arraylabl6</zorder>
+   <zorder>arraylabl3</zorder>
+   <zorder>arraylabl7</zorder>
+   <zorder>PDlabel</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
