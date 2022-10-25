@@ -1,7 +1,7 @@
 #include "networkproxy.h"
 #include <QJsonDocument>
 
-const QString NetworkProxy::root_url("http://127.0.0.1:8080");
+const QString NetworkProxy::root_url("http://111.186.41.144:33291");
 
 NetworkProxy::NetworkProxy(): manager(new QNetworkAccessManager())
 {

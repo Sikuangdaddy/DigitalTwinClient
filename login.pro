@@ -9,6 +9,11 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    DAQ/DioPortUI.cpp \
+    DAQ/simplegraph.cpp \
+    daqconfigdialog.cpp \
+    daqconfiglistitem.cpp \
+    daqdatamanager.cpp \
     data.cpp \
     inletpipe.cpp \
     logindialog.cpp \
@@ -19,6 +24,13 @@ SOURCES += \
     tooltipwidget.cpp
 
 HEADERS += \
+    DAQ/DioPortUI.h \
+    DAQ/WaveformGenerator.h \
+    DAQ/bdaqctrl.h \
+    DAQ/simplegraph.h \
+    daqconfigdialog.h \
+    daqconfiglistitem.h \
+    daqdatamanager.h \
     data.h \
     inletpipe.h \
     logindialog.h \
@@ -28,6 +40,7 @@ HEADERS += \
     tooltipwidget.h
 
 FORMS += \
+    daqconfigdialog.ui \
     logindialog.ui \
     mainwindow.ui \
     showwindow.ui

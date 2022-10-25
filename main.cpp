@@ -13,4 +13,3 @@ int main(int argc, char *argv[])
     showWindow.show();
     return a.exec();
 }
-

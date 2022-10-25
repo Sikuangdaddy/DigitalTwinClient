@@ -7,7 +7,9 @@
 #include "inletpipe.h"
 #include "tooltipwidget.h"
 #include "showwindow.h"
+#include "daqdatamanager.h"
 #include <QMainWindow>
+#include <QTimer>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -29,14 +31,17 @@ private slots:
     void on_inlet_pipe_clicked();
     void on_showButton_clicked();
     void on_uploadButton_clicked();
+    void timerTicked();
 
 private:
-    ShowWindow *showWindow;
+    class ShowWindow *showWindow;
     Ui::MainWindow *ui;
     NetworkProxy *proxy;
+    DAQDataManager *daqManager;
     QString device;
     Data *data;
     ToolTipWidget *test;
+    QTimer *timer;
     void initToolTipWidget();
 
 signals:

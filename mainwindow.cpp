@@ -5,20 +5,58 @@
 #include <QJsonDocument>
 #include <QJsonObject>
 #include <QMessageBox>
+#include <QDebug>
+
+const QStringList data_names = {
+    "进气管-静压-电控减压阀前",
+    "进气管-静压-电控减压阀后",
+    "进气管-静压-空气流量计前",
+    "进气管-温度-进气温控前",
+    "进气管-温度-进气温控后",
+    "进气管-静压-进气温控后",
+    "进气管-静压-进气歧管",
+    "进气管-温度-进气歧管",
+    "进气管-温度-进气温度",
+    "进气管-静压-进气静压",
+    "进气管-动压-进气动压",
+
+    "发动机-动压-缸压",
+
+    "排气管-动压-排气动压",
+    "排气管-静压-排气静压",
+    "排气管-温度-排气温度",
+    "排气管-静压-背压调节阀前",
+    "排气管-温度-背压调节阀前",
+
+    "水冷-温度-发动机入口",
+    "水冷-静压-发动机入口",
+    "水冷-温度-发动机出口",
+    "水冷-静压-发动机出口",
+
+    "滑油-温度-发动机入口",
+    "滑油-静压-发动机入口",
+    "滑油-温度-发动机出口",
+    "滑油-静压-发动机出口",
+};
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
-    , showWindow(new ShowWindow)
+    , showWindow(new class ShowWindow)
     , ui(new Ui::MainWindow)
     , proxy(new NetworkProxy)
+    , daqManager(new DAQDataManager(data_names))
     , device("inlet-pipe")
     , data(new InletPipe)
+    , timer(new QTimer)
 {
-    connect(proxy, &NetworkProxy::get_finished, this, &MainWindow::get_data_back);
-    connect(this, &MainWindow::updateData, showWindow, &ShowWindow::updateData);
     showWindow->show();
     ui->setupUi(this);
+    connect(proxy, &NetworkProxy::get_finished, this, &MainWindow::get_data_back);
+    connect(this, &MainWindow::updateData, showWindow, &ShowWindow::updateData);
+    connect(this->ui->pushButtonConfig, &QPushButton::clicked, daqManager, &DAQDataManager::showConfigDialog);
     initToolTipWidget();
+    timer->start(1000);
+    connect(timer, &QTimer::timeout, this, &MainWindow::timerTicked);
 }
 
 MainWindow::~MainWindow()
@@ -94,6 +132,12 @@ void MainWindow::on_uploadButton_clicked()
         *data = InletPipe::fromRandom();
         post_data("add");
     }
+}
+
+void MainWindow::timerTicked()
+{
+    QJsonObject json = daqManager->toJson();
+    get_data_back(&json);
 }
 
 void MainWindow::initToolTipWidget()

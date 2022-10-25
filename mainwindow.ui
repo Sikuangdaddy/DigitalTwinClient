@@ -332,6 +332,19 @@
      </rect>
     </property>
    </widget>
+   <widget class="QPushButton" name="pushButtonConfig">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>560</y>
+      <width>111</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>配置数据源</string>
+    </property>
+   </widget>
    <zorder>label_show</zorder>
    <zorder>showButton</zorder>
    <zorder>uploadButton</zorder>
@@ -362,6 +375,7 @@
    <zorder>stapre12</zorder>
    <zorder>dynapre1</zorder>
    <zorder>dynapre2</zorder>
+   <zorder>pushButtonConfig</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -369,7 +383,7 @@
      <x>0</x>
      <y>0</y>
      <width>1328</width>
-     <height>26</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>
